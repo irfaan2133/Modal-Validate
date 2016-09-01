@@ -8,4 +8,8 @@ export class FormValidationPage {
   constructor() {
 
   }
+
+  openModal() {
+  	debugger;
+  }
 }
