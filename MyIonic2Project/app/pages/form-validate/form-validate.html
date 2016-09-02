@@ -10,10 +10,12 @@
 
 <ion-content padding class="getting-started">
   <div class="fields">
-    Name: <input type="text" name="username">
+    Name: <input type="text" name="username" [(ngModel)]="uname"> 
+    <span class="error" [hidden]="isValidName" style="color: red;"> Invalid User name</span>
   </div>
   <div class="fields">
-    Email: <input type="text" name="email">
+    Email: <input type="text" name="email" [(ngModel)]="email">
+    <span class="error" [hidden]="isValidEmail" style="color: red;"> Invalid Email</span>
   </div>  
   <button (click)="openModal()"> Submit </button>
 
